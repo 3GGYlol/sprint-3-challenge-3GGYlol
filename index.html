@@ -58,7 +58,7 @@
       // 🧠 Implement a `getAllReversed` method which returns the ints in reverse order
       // ❗ WARNING: except for `getAllReversed`, methods must respect the order of the integers
       // ❗ WARNING: note that none of the methods actually mutate the `ints` property
-     constructor(...args) {
+      constructor(...args) {
     this.ints = args;
   }
 
@@ -89,10 +89,9 @@
 
   getEveryNth(n) {
     return this.ints.filter((_, index) => index % n === 0);
-  }
-
+  } 
   getAllReversed() {
-    return this.ints.slice().reverse();
+  return this.ints.slice().reverse();
   }
     }
 
@@ -111,7 +110,7 @@
       //      * When engaging the safety, return "Safety enabled!"
       //      * When disengaging the safety, return "Safety disabled!"
       // 🌟 HINT: instances need to keep track of their maximum capacity as well as their current capacity
-       constructor(capacity) {
+      constructor(capacity) {
     this.capacity = capacity;
     this.currentCapacity = capacity;
     this.safetyOn = true;
@@ -140,6 +139,7 @@
     return this.safetyOn ? "Safety enabled!" : "Safety disabled!";
   }
     }
+
 
     // 👉 CHALLENGE 3 EBook
     class EBook {
